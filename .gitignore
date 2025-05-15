@@ -1,0 +1,33 @@
+# Fichiers de données
+data/processed/
+
+# Modèles Word2Vec sauvegardés
+WE_models/
+
+# Documents
+docs/
+
+# Notebooks de cache (optionnel si tu ne veux pas les artefacts de Jupyter)
+.ipynb_checkpoints/
+
+# Environnement Python
+.env
+.venv/
+env/
+venv/
+__pycache__/
+*.py[cod]
+*.so
+*.pyd
+
+# Fichiers de configuration et de logs générés automatiquement
+*.log
+*.tmp
+
+# Données NLTK téléchargées
+src/nltk_data/
+
+# Fichiers système ou IDE
+.DS_Store
+Thumbs.db
+.vscode/
