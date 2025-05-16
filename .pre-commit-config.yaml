@@ -1,18 +1,4 @@
 repos:
-  - repo: local
-    hooks:
-      - id: update-environment
-        name: Mise à jour de environment.yml
-        # Pour Windows
-        entry: powershell -Command "
-          conda activate tourisme-vert-env;
-          conda env export --no-builds --file environment.yml"
-        # Pour Linux/macOS
-        # entry: bash -c "source $(conda info --base)/etc/profile.d/conda.sh;
-        # conda activate tourisme-vert-env;
-        # conda env export --no-builds --file environment.yml"
-        language: system
-
   - repo: https://github.com/pre-commit/pre-commit-hooks
     rev: v5.0.0
     hooks:
@@ -81,4 +67,4 @@ repos:
         name: Lint et organise les imports
         args: ["--fix", "check", "--select", "I"]
       - id: ruff-format
-        name: formatte
+        name: formatage
